@@ -1,6 +1,6 @@
 # HTML code in comments
 
-This very light WordPress plugin allows to put HTML code in comments. The code inside <code> and <pre> tags will be automatically encoded.
+This very light WordPress plugin allows to put HTML code in comments. The code inside `&lt;code&gt;` and `&lt;pre&gt;` tags will be automatically encoded.
 
 For more details, visit my website : http://ludovicscribe.fr/blog/wordpress-commentaires-html.
 
