@@ -16,11 +16,13 @@ and your code will be visible on the web-page.
 ## How to use
 
 Automated installation :
+
 1. On the plugin addition page, enter "html code comments" in the search field
 2. Click the install button on the "HTML Code Comments" plugin
 3. Wait for installaltion end and click the activate button.
 
 Manual installation :
+
 1. Unzip the downloaded zip file.
 2. Upload the `html-code-comments` folder and its contents into the `wp-content/plugins/` directory of your WordPress installation
 3. Activate HTML Code Comments from Plugins page.
