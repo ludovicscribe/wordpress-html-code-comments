@@ -1,29 +1,29 @@
 <?php
 /*
 Plugin Name: HTML code in comments
-Plugin URI: http://ludovicscribe.fr/blog/wordpress-commentaires-html
-Description: Permet d'encoder le code HTML contenu dans les balises <code>&lt;code&gt;</code> et <code>&lt;pre&gt;</code> des commentaires.
-Version: 1.0
+Plugin URI: https://ludovicscribe.fr/blog/wordpress-commentaires-html
+Description: This very light plugin allows to put HTML code in comments. The code inside "code" and "pre" tags will be automatically encoded.
+Version: 1.0.1
 Author: Ludovic Scribe
-Author URI: http://ludovicscribe.fr
+Author URI: https://ludovicscribe.fr
 */
 
 // Ajout de la balise pre dans la liste des balises autorisées
-function comment_post_allow_html_tags() {
+function hcc_allow_html_tags() {
    global $allowedtags;
    $allowedtags['pre'] = array();
 }
 
-add_action( 'init', 'comment_post_allow_html_tags' );  
+add_action( 'init', 'hcc_allow_html_tags' );  
 
 // Remplacement des caractères contenus dans les balises pre et code par leurs entités HTML
-function preprocess_comment_encode_html( $data ) {
-	$data['comment_content'] = preg_replace_callback( '/<(code|pre).*>(.*)<\/\1/isU' , 'comment_encode_html', $data['comment_content'] );
+function hcc_preprocess_comment( $data ) {
+	$data['comment_content'] = preg_replace_callback( '/<(code|pre).*>(.*)<\/\1/isU' , 'hcc_encode_html', $data['comment_content'] );
 	return $data;
 }
 
-add_filter( 'preprocess_comment', 'preprocess_comment_encode_html' );
+add_filter( 'preprocess_comment', 'hcc_preprocess_comment' );
 
-function comment_encode_html( $matches ) {
+function hcc_encode_html( $matches ) {
 	return str_replace( $matches[2], htmlentities($matches[2]), $matches[0] );
 }
