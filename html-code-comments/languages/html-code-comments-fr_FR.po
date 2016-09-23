@@ -1,0 +1,178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML Code Comments\n"
+"POT-Creation-Date: 2016-09-23 14:36+0100\n"
+"PO-Revision-Date: 2016-09-23 14:38+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr-FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../html-code-comments.php:97
+#, php-format
+msgid ""
+"You allow HTML tag(s) in comments that could cause XSS vulnerabilities. "
+"Check <a href=\"%s\">your settings</a> or <a href=\"%s\">dismiss this "
+"message</a>."
+msgstr ""
+"Vous avez autorisé certaines balises dans vos commentaires HTML qui "
+"pourraient être source de failles XSS. Vérifiez <a href=\"%s\">votre "
+"configuration</a> ou <a href=\"%s\">cachez ce message</a>."
+
+#: ../html-code-comments.php:142 ../templates/config.php:2
+msgid "HTML code in comments"
+msgstr "Code HTML dans les commentaires"
+
+#: ../templates/config.php:7
+msgid "HTML tag as been added."
+msgstr "La balise HTML a bien été ajoutée."
+
+#: ../templates/config.php:9
+msgid "HTML tag has been added but it can cause XSS vulnerabilities."
+msgstr ""
+"La balise HTML a bien été ajoutée mais elle peut causer des failles XSS."
+
+#: ../templates/config.php:11
+msgid "Attribute as been added."
+msgstr "L'attribut a bien été ajouté."
+
+#: ../templates/config.php:13
+msgid "HTML tag has been removed."
+msgstr "La balise HTML a bien été supprimée."
+
+#: ../templates/config.php:15
+msgid "Attribute has been removed."
+msgstr "L'attribut a bien été supprimé."
+
+#: ../templates/config.php:17
+msgid "HTML encoding has been enabled."
+msgstr "L'encodage du code HTML a bien été activé."
+
+#: ../templates/config.php:19
+msgid "HTML encoding has been disabled."
+msgstr "L'encodage du code HTML a bien été désactivé."
+
+#: ../templates/config.php:21
+msgid "Forcing HTML links target has been enabled."
+msgstr "Le forçage de la cible des liens a été activé."
+
+#: ../templates/config.php:23
+msgid "Forcing HTML links target has been disabled."
+msgstr "Le forçage de la cible des liens a été désactivé."
+
+#: ../templates/config.php:25
+msgid ""
+"The tag's name is not in the right format. You must enter the name of the "
+"tag without the characters \"<\" and \">\"."
+msgstr ""
+"Le nom de la balise n'est pas dans le bon format. Vous devez entrer le nom "
+"de la balise sans les caractères \"<\" et \">\"."
+
+#: ../templates/config.php:27
+msgid "The attribute's name is not in the right format."
+msgstr "Le nom de l'attribut n'est pas dans le bon format."
+
+#: ../templates/config.php:32
+msgid "Allowed HTML tags"
+msgstr "Balises HTML autorisées"
+
+#: ../templates/config.php:37 ../templates/config.php:71
+msgid "Tag name"
+msgstr "Nom de la balise"
+
+#: ../templates/config.php:38
+msgid "Attribute"
+msgstr "Attribut"
+
+#: ../templates/config.php:59
+msgid "No authorized attribute"
+msgstr "Aucun attribut autorisé"
+
+#: ../templates/config.php:67
+msgid "Add tag"
+msgstr "Ajout d'une balise"
+
+#: ../templates/config.php:76 ../templates/config.php:119
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../templates/config.php:82
+msgid "Delete tag"
+msgstr "Suppression d'une balise"
+
+#: ../templates/config.php:85 ../templates/config.php:104
+#: ../templates/config.php:128
+msgid "HTML tag"
+msgstr "Balise HTML"
+
+#: ../templates/config.php:95 ../templates/config.php:145
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../templates/config.php:101
+msgid "Add attribute"
+msgstr "Ajout d'un attribut"
+
+#: ../templates/config.php:114 ../templates/config.php:138
+msgid "Attribute name"
+msgstr "Nom de l'attribut"
+
+#: ../templates/config.php:125
+msgid "Delete attribute"
+msgstr "Suppression d'un attribut"
+
+#: ../templates/config.php:151
+msgid "Advanced configuration"
+msgstr "Configuration avancée"
+
+#: ../templates/config.php:153
+msgid "HTML code encoding"
+msgstr "Encodage du code HTML"
+
+#: ../templates/config.php:155
+msgid ""
+"This functionality allows to encode HTML code wrapped in the <code>pre</"
+"code> and <code>code</code> tags of your comments in order that WordPress "
+"doesn't delete it."
+msgstr ""
+"Cette fonctionnalité permet d'encoder le code HTML qui est contenu dans les "
+"balises <code>pre</code> et <code>code</code> de\tvos commentaires afin "
+"d'éviter qu'il ne soit supprimé par WordPress si les balises ne font pas "
+"partie des balises autorisées."
+
+#: ../templates/config.php:157 ../templates/config.php:164
+msgid "Enable"
+msgstr "Activer"
+
+#: ../templates/config.php:158 ../templates/config.php:165
+msgid "Disable"
+msgstr "Désactiver"
+
+#: ../templates/config.php:160
+msgid "Force links target to blank"
+msgstr "Forcer la cible des liens"
+
+#: ../templates/config.php:162
+msgid ""
+"This feature sets <code>target</code> attribute of all links in comments to "
+"<code>_blank</code> in order to open the URLs in new window."
+msgstr ""
+"Cette option permet  remplacer la valeur de l'attribut <code>target</code> "
+"des liens contenus dans vos commentaires par <code>_blank</code>. Cela "
+"permet d'ouvrir l'URL de chaque lien dans une nouvelle fenêtre. "
+
+msgid ""
+"This plugin allows to take control of the HTML code allowed in your comments."
+msgstr ""
+"Ce plugin permet de prendre le contrôle du code HTML contenu dans vos "
+"commentaires."
+
+#~ msgid "Remove"
+#~ msgstr "Supprimer"
